@@ -46,3 +46,8 @@ a {
   height: 600px;
   padding-left: 10px;
 }
+
+#templateLinks li {
+  clear: both;
+  list-style-type: decimal;
+}
