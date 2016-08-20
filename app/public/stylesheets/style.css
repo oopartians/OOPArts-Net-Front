@@ -21,10 +21,10 @@ a {
 
 #logo {
   width: 1000px;
-  height: 150px;
+  height: 185px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: lightslategray;
+  /*background-color: lightslategray;*/
   text-align: center;
 }
 
