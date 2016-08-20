@@ -3,8 +3,17 @@ html
   head
     title= title
     meta(charset='utf-8')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.js')
     link(rel='stylesheet', type='text/css', href='/stylesheets/login-layout.css')
   body
-    div#logo
-      h1#main-title OOPArts
-      h4#sub-title Out of Place Artifacts
+    div#wrapper
+      div#logo
+        h1#main-title OOPArts
+        h4#sub-title Out of Place Artifacts
+      div#content
+        div#gameGallery
+          include login-gameGallery
+        div#loginBox
+          include login-loginBox
+      div#footer
