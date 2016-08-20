@@ -15,6 +15,10 @@ router.get('/', function(req, res, next) {
     res.render('templateList');
 });
 
+router.get('/login', function (req, res, next) {
+    res.render('login', { title: 'Login Page | OOPArts'});
+});
+
 // main-layout url 은 별 의미는 없지만 등록해놓음 (아무런 영향없으니 무시하면됨)
 router.get('/main-layout', function (req, res, next) {
     res.render('main-layout');
@@ -24,7 +28,6 @@ router.get('/main-home', function (req, res, next) {
     res.render('main-home', { title: 'OOPArts' });
 });
 
-// TODO: login 페이지 router 등록
 // TODO: profile 페이지 router 등록
 // TODO: article-list 페이지 router 등록
 // TODO: article-write 페이지 router 등록
