@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./app/bin/www"
+    "start": "node ./app/bin/www -a localhost -p 5000"
   },
   "config": {
     "port": "5000"
