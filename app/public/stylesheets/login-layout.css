@@ -121,8 +121,8 @@ h4#sub-title {
     padding: 0 8px;
     border: 1px solid #d9d9d9;
     border-radius: 1px;
-    font-size: 16px;
-    font-family: Consolas;
+    font-size: 17px;
+    font-family: 'Inconsolata', monospace;
 }
 
 #pwBox {
@@ -137,8 +137,9 @@ h4#sub-title {
     padding: 0 8px;
     border: 1px solid #d9d9d9;
     border-radius: 1px;
-    font-size: 16px;
-    font-family: Consolas;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-weight: 300;*/
 }
 
 #loginBtnBox {
@@ -154,6 +155,7 @@ h4#sub-title {
 #singIn {
     width: 100%;
     height: 100%;
-    font-size: 16px;
-    font-family: Consolas;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
 }
