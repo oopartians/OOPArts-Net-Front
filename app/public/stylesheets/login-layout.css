@@ -15,14 +15,15 @@ body {
 }
 
 h1#main-title {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Coming Soon', cursive;
+    /*font-weight: bold;*/
     font-size: 5em;
-    font-weight: normal;
+    /*font-weight: normal;*/
     margin: 0;
 }
 
 h4#sub-title {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Coming Soon', cursive;
     font-size: 2em;
     margin: 0;
 }
