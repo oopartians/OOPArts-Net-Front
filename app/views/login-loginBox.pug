@@ -1,10 +1,11 @@
 div#container
-  div#inputBox
-    div#idBox
-      input#userId(placeholder='Id')
-    div#pwBox
-      input#passWd(type='password', placeholder='Password')
-  div#loginBtnBox
-    input#singIn(type='submit' value='Login')
+  form(method='post')
+    div#inputBox
+      div#idBox
+        input#userId(type='text' placeholder='Username', required='required', class='input-txt')
+      div#pwBox
+        input#passWd(type='password', placeholder='Password', required='required', class='input-txt')
+    div#loginBtnBox
+      input#singIn(type='submit', value='Login', class='btn btn--right' )
 
 
