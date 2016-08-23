@@ -181,17 +181,14 @@ h4#sub-title {
     -webkit-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
 }
-.input-txt:-moz-placeholder {
-    color: azure;
-}
-.input-txt:-ms-input-placeholder {
-    color: azure;
-}
-.input-txt::-webkit-input-placeholder {
-    color: azure;
-}
+.input-txt:-moz-placeholder { color: azure; }
+.input-txt:-ms-input-placeholder { color: azure; }
+.input-txt::-webkit-input-placeholder { color: azure; }
 .input-txt:focus {
     background-color: rgba(250, 250, 250, 0.15);
     /*outline-color: azure;*/
     outline: none;
 }
+.input-txt:focus::-moz-placeholder { color: transparent; }
+.input-txt:focus:-ms-input-placeholder { color: transparent; }
+.input-txt:focus::-webkit-input-placeholder { color: transparent; }
