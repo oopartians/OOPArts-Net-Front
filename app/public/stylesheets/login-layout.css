@@ -160,7 +160,7 @@ h4#sub-title {
     font-weight: 500;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
-    background-color: #494949;
+    background-color: rgba(73, 73, 73, 0.95);
     border: none;
     color: azure;
 }
