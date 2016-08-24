@@ -192,3 +192,60 @@ h4#sub-title {
 .input-txt:focus::-moz-placeholder { color: transparent; }
 .input-txt:focus:-ms-input-placeholder { color: transparent; }
 .input-txt:focus::-webkit-input-placeholder { color: transparent; }
+
+#remember {
+    float: left;
+    margin-left: 25px;
+    margin-top: 17px;
+}
+
+.toggle {
+
+}
+.toggle__control {
+    transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    width: 3em;
+    height: 1.5em;
+    display: block;
+    border: 2px solid rgba(250, 250, 250, 0.3);
+    border-radius: 1.5em;
+    background-color: rgba(00, 00, 00, 0.06);
+    position: relative;
+    float: left;
+}
+.toggle__control:after {
+    transition: 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(00, 00, 00, 0.2), 0 3px 3px rgba(00, 00, 00, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.toggle__input {
+    display: none;
+}
+.toggle__input:checked + .toggle__control{
+    border-color: #4cd964;
+    background-color: #4cd964;
+}
+
+.toggle__input:checked + .toggle__control:after {
+    left: 1.5em;
+}
+
+#rememberComment {
+    /*margin-left: 60px;*/
+    /*@import url('http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');*/
+    /*font-family: 'Nanum Gothic', serif;*/
+    width: 155px;
+    /*position: absolute;*/
+    color: azure;
+    margin-top: 4px;
+    font-size: 14px;
+}
