@@ -250,9 +250,17 @@ h4#sub-title {
 .ui-coverflow-wrapper {
     width: 600px;
     height: 240px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .ui-state-active {
     border: 0;
+    background: #868686;
+}
+
+.gameCover {
+    background-color: #868686;
+    width: 230px;
+    height: 230px;
+    border: 2px solid #c2c2c2;
 }
