@@ -44,7 +44,7 @@ h4#sub-title {
 
     #gameGallery {
         border: 1px;
-        background-color: aquamarine;
+        /*background-color: aquamarine;*/
         float: left;
         width: 600px;
         height: 260px;
@@ -76,7 +76,7 @@ h4#sub-title {
 
     #gameGallery {
         border: 1px;
-        background-color: aquamarine;
+        /*background-color: aquamarine;*/
         width: 600px;
         height: 260px;
         margin: 0 auto;
@@ -245,4 +245,14 @@ h4#sub-title {
     padding-top: 4px;
     font-size: 14px;
     height: 28px;
+}
+
+.ui-coverflow-wrapper {
+    width: 600px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.ui-state-active {
+    border: 0;
 }
