@@ -240,12 +240,9 @@ h4#sub-title {
 }
 
 #rememberComment {
-    /*margin-left: 60px;*/
-    /*@import url('http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');*/
-    /*font-family: 'Nanum Gothic', serif;*/
     width: 155px;
-    /*position: absolute;*/
     color: azure;
-    margin-top: 4px;
+    padding-top: 4px;
     font-size: 14px;
+    height: 28px;
 }
