@@ -14,6 +14,7 @@ div#container
           };
 
           $.ajax({
+            crossOrigin: true,
             url: "http://api.ooparts.club/login",
             type: "POST",
             data: userInfo,
