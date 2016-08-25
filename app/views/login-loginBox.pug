@@ -1,12 +1,28 @@
 div#container
-  form(method='post')
+  form#userInfo
     div#inputBox
       div#idBox
-        input#userId(type='text' placeholder='Username', required='required', class='input-txt')
+        input#userId(type='text', placeholder='Username', required='required', class='input-txt')
       div#pwBox
         input#passWd(type='password', placeholder='Password', required='required', class='input-txt')
     div#loginBtnBox
-      input#singIn(type='submit', value='Login', class='btn btn--right' )
+      script.
+        function submitLoginForm() {
+          var userInfo = {
+            userId: 'a',
+            password: 'a'
+          };
+
+          $.ajax({
+            url: "http://api.ooparts.club/login",
+            type: "POST",
+            data: userInfo,
+            contentType: "application/json",
+          }).done(function (data) {
+            alert(data);
+          });
+        }
+      input#singIn(type='button', value='Login', class='btn btn--right', onclick="submitLoginForm()")
     div#remember
       label.toggle
         input#PersistentCookie.toggle__input(type='checkbox', value='yes', checked='checked')
