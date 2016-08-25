@@ -7,6 +7,14 @@ var bodyParser = require('body-parser');
 
 var tempIndexRouter = require('./routes/developBoard');
 
+var allowCrossDomain = function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', 'http://api.ooparts.club');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+  next();
+};
+
 var app = express();
 
 // view engine setup
@@ -21,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(allowCrossDomain());
 app.use('/', tempIndexRouter);
 
 // catch 404 and forward to error handler
